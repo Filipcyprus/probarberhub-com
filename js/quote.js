@@ -2,6 +2,14 @@
 
 (function () {
   const root = document.getElementById('quote-root');
+  let referralCodes = [];
+  fetch('data/referral-codes.json?v=46').then(r => r.json()).then(list => { referralCodes = list; }).catch(() => {});
+
+  function findReferral(code) {
+    const c = (code || '').trim().toUpperCase();
+    if (!c) return null;
+    return referralCodes.find(r => r.code.toUpperCase() === c) || undefined;
+  }
 
   function render() {
     const items = getQuote();
@@ -36,6 +44,11 @@
             <div class="form-row"><label for="q-name">Your name *</label><input id="q-name" required></div>
             <div class="form-row"><label for="q-business">Barbershop / business *</label><input id="q-business" required></div>
             <div class="form-row"><label for="q-phone">Phone / WhatsApp *</label><input id="q-phone" type="tel" required></div>
+            <div class="form-row">
+              <label for="q-referral">Referral code (optional)</label>
+              <input id="q-referral" autocomplete="off" placeholder="e.g. MARIOS10">
+              <div id="q-referral-status" style="font-size:.8rem;margin-top:6px;min-height:1.2em;"></div>
+            </div>
             <button type="submit" class="btn btn-red btn-block">Send Quote via WhatsApp</button>
             <p class="form-note">Opens WhatsApp with your full list pre-filled. Prefer email? <a href="mailto:contact@rovra.cy" style="font-weight:700;">contact@rovra.cy</a></p>
           </form>
@@ -44,6 +57,14 @@
 
     root.querySelector('#clear-quote').addEventListener('click', () => { clearQuote(); });
     root.querySelector('#quote-form').addEventListener('submit', onSubmit);
+    root.querySelector('#q-referral').addEventListener('input', (e) => {
+      const status = root.querySelector('#q-referral-status');
+      const val = e.target.value.trim();
+      if (!val) { status.textContent = ''; return; }
+      const match = findReferral(val);
+      if (match) { status.textContent = `✓ Referred by ${match.ambassador}`; status.style.color = 'var(--brand, #E32227)'; }
+      else { status.textContent = 'Code not recognized — check for typos'; status.style.color = 'var(--muted)'; }
+    });
 
     root.querySelectorAll('[data-inc]').forEach(b => b.addEventListener('click', () => { const id = b.getAttribute('data-inc'); const it = getQuote().find(i => i.id === id); setQty(id, (it.qty || 1) + 1); }));
     root.querySelectorAll('[data-dec]').forEach(b => b.addEventListener('click', () => { const id = b.getAttribute('data-dec'); const it = getQuote().find(i => i.id === id); setQty(id, (it.qty || 1) - 1); }));
@@ -73,11 +94,14 @@
     const name = document.getElementById('q-name').value.trim();
     const business = document.getElementById('q-business').value.trim();
     const phone = document.getElementById('q-phone').value.trim();
+    const referralInput = document.getElementById('q-referral').value.trim();
+    const referral = findReferral(referralInput);
     const items = getQuote();
     const lines = [
       `Wholesale quote request — ${name}`,
       `Business: ${business}`,
       `Phone: ${phone}`,
+      ...(referral ? [`Referral code: ${referral.code} (Ambassador: ${referral.ambassador})`] : []),
       '',
       'Products:',
       ...items.map((i, n) => `${n + 1}. ${i.qty || 1} × ${i.name} (${i.brandName || ''})`),
