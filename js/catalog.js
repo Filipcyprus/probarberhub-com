@@ -189,10 +189,10 @@
   els.loadMore.addEventListener('click', () => render(false));
 
   Promise.all([
-    fetch('data/products.json?v=45').then(r => r.json()),
-    fetch('data/brands.json?v=45').then(r => r.json()),
-    fetch('data/types.json?v=45').then(r => r.json()),
-    fetch('data/departments.json?v=45').then(r => r.json()),
+    fetch('data/products.json?v=47').then(r => r.json()),
+    fetch('data/brands.json?v=47').then(r => r.json()),
+    fetch('data/types.json?v=47').then(r => r.json()),
+    fetch('data/departments.json?v=47').then(r => r.json()),
   ]).then(([p, b, t, d]) => {
     allProducts = p; brands = b; types = t; departments = d;
     PBH.registerProducts(p);
