@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brands We Supply — ProBarberHub Wholesale</title>
+<meta name="description" content="35+ professional barber and salon brands available at wholesale — Rovra, Barbertime, Immortal NYC, L3VEL3, Xanitalia and more. Official distributor lines." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23131417%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Arial%22 font-weight=%22900%22 fill=%22%23E32227%22 text-anchor=%22middle%22>P</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=38">
+</head>
+<body data-page="brands">
+
+<div id="site-announce"></div>
+<div id="site-topbar"></div>
+<div id="sidebar-backdrop"></div>
+<div class="shell">
+  <aside id="site-sidebar"></aside>
+  <div class="main-col">
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Brands</div>
+    <h1 style="margin-bottom:6px;">Brands We Supply</h1>
+    <p class="lede mb-0" id="page-sub">Loading brands…</p>
+  </div>
+</div>
+
+<main class="container">
+  <div class="brand-grid" id="brand-grid">
+    <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+  </div>
+</main>
+
+  </div>
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/app.js?v=38"></script>
+<script src="js/cards.js?v=38"></script>
+<script src="js/chrome.js?v=38"></script>
+<script>
+  fetch('data/brands.json?v=38').then(r => r.json()).then(brands => {
+    document.getElementById('page-sub').textContent = `${brands.length} professional brands · ${brands.reduce((s,b)=>s+b.productCount,0).toLocaleString()} products at trade prices.`;
+    // fixed order: Rovra (house line) first, then alphabetical — never random
+    const ordered = brands.slice().sort((a, b) =>
+      (a.id === 'rovra' ? 0 : 1) - (b.id === 'rovra' ? 0 : 1) || a.name.localeCompare(b.name));
+    document.getElementById('brand-grid').innerHTML = ordered.map(brandCard).join('');
+  }).catch(err => { console.error(err); document.getElementById('page-sub').textContent = 'Could not load brands right now.'; });
+
+  function brandCard(b) {
+    return `
+      <a class="brand-card" href="catalog.html?brand=${encodeURIComponent(b.id)}">
+        <div class="brand-card-image"><img src="${b.image}" alt="${escapeHtml(b.name)}" loading="lazy"></div>
+        <div class="brand-card-body">
+          <div class="brand-card-top">
+            <h3 style="margin:0;">${escapeHtml(b.name)}</h3>
+            ${b.isOfficialDistributor ? '<span class="brand-official">Official</span>' : ''}
+          </div>
+          ${b.tagline ? `<div class="brand-tagline">${escapeHtml(b.tagline)}</div>` : ''}
+          <p class="brand-desc">${escapeHtml((b.description || '').slice(0, 140))}${b.description && b.description.length > 140 ? '…' : ''}</p>
+          <div class="brand-card-footer">
+            <span class="brand-count">${b.productCount} product${b.productCount === 1 ? '' : 's'}</span>
+            <span class="link-red">View products →</span>
+          </div>
+        </div>
+      </a>`;
+  }
+</script>
+</body>
+</html>

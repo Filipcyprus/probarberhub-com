@@ -1,0 +1,326 @@
+[
+  {
+    "id": "barbertime",
+    "name": "Barbertime",
+    "isOfficialDistributor": true,
+    "tagline": "The Complete Barbershop Brand",
+    "description": "Barbertime is a Romanian professional barber brand offering one of the widest product ranges in the industry — from waxes, pomades, and hair gels to shaving tools, after shave colognes, barber capes, accessories, and consumables. Built for the needs of the modern barbershop.",
+    "image": "assets/logos/logo-barbertime-wall.png",
+    "productCount": 113
+  },
+  {
+    "id": "rovra",
+    "name": "Rovra",
+    "isOfficialDistributor": true,
+    "tagline": "Power and Precision in Every Cut",
+    "description": "ROVRA builds high-performance professional barber tools trusted by top barbers worldwide. From precision clippers and trimmers to ultra-fast hair dryers and professional accessories, every product is engineered for demanding daily use.",
+    "image": "assets/logos/logo-rovra-wall.webp",
+    "productCount": 97
+  },
+  {
+    "id": "alveola",
+    "name": "Alveola",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Sugar Paste",
+    "description": "Alveola is a professional depilatory brand offering sugar paste and waxing products for gentle, effective hair removal.",
+    "image": "assets/logos/logo-alveola.webp",
+    "productCount": 2
+  },
+  {
+    "id": "athina",
+    "name": "Athina",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Depilatory Waxing",
+    "description": "Athina is a professional depilatory line offering film wax beads, elastic waxes, roll-on refills, paraffin, disposables and complete pre and after-wax care for smooth, effective salon hair removal.",
+    "image": "assets/logos/logo-athina.webp",
+    "productCount": 95
+  },
+  {
+    "id": "barbicide",
+    "name": "Barbicide",
+    "isOfficialDistributor": false,
+    "tagline": "The Standard in Salon Disinfection",
+    "description": "Barbicide is the globally recognised leader in barbershop and salon disinfection. Since 1947, the iconic blue solution has set the gold standard for implement sanitation — trusted by professionals worldwide for safe, EPA-registered disinfection of combs, shears, clippers, and all reusable tools.",
+    "image": "assets/logos/logo-barbicide.png",
+    "productCount": 7
+  },
+  {
+    "id": "biemme",
+    "name": "BIEMME",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Wax Heaters & Waxing",
+    "description": "BIEMME is an Italian professional brand specialising in wax heaters and depilatory waxes engineered for reliable, efficient salon hair removal.",
+    "image": "assets/logos/logo-biemme.webp",
+    "productCount": 27
+  },
+  {
+    "id": "binacil",
+    "name": "Binacil",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Lash & Brow Tinting",
+    "description": "Binacil is a professional German lash and brow tinting brand offering rich, long-lasting tints, developer and application accessories for precise salon results.",
+    "image": "assets/logos/logo-binacil.jpg",
+    "productCount": 14
+  },
+  {
+    "id": "depilflax",
+    "name": "Depilflax",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Depilatory Wax Systems",
+    "description": "Depilflax is a leading Spanish professional depilatory brand offering a complete waxing system — elastic and film waxes, roll-on refills, paraffin, pre and after-wax care and accessories — trusted by salons for smooth, effective and comfortable hair removal.",
+    "image": "assets/logos/logo-depilflax.png",
+    "productCount": 54
+  },
+  {
+    "id": "dubaiaromas",
+    "name": "DubaiAromas",
+    "isOfficialDistributor": false,
+    "tagline": "Luxury Middle Eastern Fragrances",
+    "description": "DubaiAromas brings the rich tradition of Middle Eastern perfumery to the modern barbershop. Specialising in long-lasting aftershave colognes, eau de parfum, and signature fragrance blends inspired by the luxury scents of Dubai — crafted for a premium grooming finish.",
+    "image": "assets/logos/logo-dubaiaromas.png",
+    "productCount": 39
+  },
+  {
+    "id": "epilatpro",
+    "name": "EpilatPRO",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Waxing & Salon Essentials",
+    "description": "EpilatPRO is a professional waxing and salon-essentials brand offering depilatory waxes, consumables and accessories for efficient, high-quality salon treatments.",
+    "image": "assets/logos/logo-epilatpro.webp",
+    "productCount": 47
+  },
+  {
+    "id": "felce-azzurra",
+    "name": "Felce Azzurra",
+    "isOfficialDistributor": false,
+    "tagline": "Classic Italian Talc",
+    "description": "Felce Azzurra is an iconic Italian brand whose classic scented talc powder leaves the skin soft, dry and delicately fragranced.",
+    "image": "assets/logos/logo-felce-azzurra.webp",
+    "productCount": 3
+  },
+  {
+    "id": "fiab",
+    "name": "FIAB",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Aesthetic Treatments",
+    "description": "FIAB is an Italian professional medical-aesthetic brand offering radiofrequency (TECAR) therapy creams for professional body and facial treatments.",
+    "image": "assets/logos/logo-fiab.webp",
+    "productCount": 2
+  },
+  {
+    "id": "glemen",
+    "name": "Glemen",
+    "isOfficialDistributor": false,
+    "tagline": "Romanian Craft Barber Styling",
+    "description": "Glemen is a rising Romanian professional barber brand engineered for the modern barbershop. The range spans high-shine and matte waxes, volume styling powders, premium aftershave colognes, salt sprays, menthol hair tonics, professional hairsprays, and beard care — all crafted to meet the highest salon standards.",
+    "image": "assets/logos/logo-glemen.jpg",
+    "productCount": 13
+  },
+  {
+    "id": "immortal-nyc",
+    "name": "Immortal",
+    "isOfficialDistributor": false,
+    "tagline": "NYC Street Style Grooming",
+    "description": "Born in the streets of New York, Immortal NYC delivers a complete professional grooming range trusted by barbers worldwide. The expanded catalog includes signature pomades, waxes, and styling gels (Venom, Samurai Spirit, Wild West, The Creed, Brilliante, Captain Black, Aventus, and more), aftershave colognes (One Million, Bay Rum, Sailors Anthem, Luxury Marine), eau de parfum, hair sprays, salt sprays, color sprays, professional shampoos and conditioners, beard oils and balms, face masks and scrubs, barber capes, and styling accessories.",
+    "image": "assets/logos/logo-immortal-nyc-wall.webp",
+    "productCount": 163
+  },
+  {
+    "id": "jimjams",
+    "name": "JimJams",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Lash & Brow Tinting",
+    "description": "JimJams is a professional lash and brow tinting brand offering rich, long-lasting cream tints in a range of natural shades.",
+    "image": "assets/logos/logo-jimjams.webp",
+    "productCount": 4
+  },
+  {
+    "id": "king-talc",
+    "name": "King Talc",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Scented Talc",
+    "description": "King Talc offers finely milled, delicately scented talc powders that leave the skin smooth, dry and comfortable after grooming.",
+    "image": "assets/logos/logo-king-talc.png",
+    "productCount": 2
+  },
+  {
+    "id": "l3vel3",
+    "name": "L3VEL3",
+    "isOfficialDistributor": false,
+    "tagline": "Next Level Barber Chemistry",
+    "description": "L3VEL3 brings scientific precision to barbering across a complete professional range. From signature styling waxes (Matte Putty, Spider Wax, Glossy Pomade) and gels (Super Strong, Slime, Creamy) to aftershave colognes (Frost, Flame, Aqua, Houston, Royale), professional shampoos and conditioners, beard care, hair sprays, salt sprays, and a full lineup of barbering tools — stainless steel razors, capes, spray bottles, combs, brushes, mixing bowls, hair design pencils — plus salon coloring with cream developers, bleaching powder, and a vibrant 16-shade semi-permanent color palette.",
+    "image": "assets/logos/logo-l3vel3-wall.webp",
+    "productCount": 125
+  },
+  {
+    "id": "lineapro",
+    "name": "LineaPRO",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Waxing & Beauty",
+    "description": "LineaPRO is a professional waxing and beauty line offering depilatory waxes, roll-on cartridges, paraffin and complete pre and after-wax care for reliable, salon-quality hair removal services.",
+    "image": "assets/logos/logo-lineapro.png",
+    "productCount": 48
+  },
+  {
+    "id": "maxima",
+    "name": "MAXIMA",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Colour Care",
+    "description": "MAXIMA offers professional colour-care solutions, including hair-dye stain removers for a clean, tidy finish after colouring services.",
+    "image": "assets/logos/logo-maxima.jpg",
+    "productCount": 1
+  },
+  {
+    "id": "novicide",
+    "name": "Novicide",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Instrument Disinfection",
+    "description": "Novicide provides professional concentrated disinfectants and sterilisation containers for hygienic instrument care in salons and barbershops.",
+    "image": "assets/logos/logo-novicide.webp",
+    "productCount": 5
+  },
+  {
+    "id": "occ-switzerland",
+    "name": "OCC Switzerland",
+    "isOfficialDistributor": false,
+    "tagline": "Swiss Professional Disinfection",
+    "description": "OCC Switzerland provides professional Swiss-quality disinfectants for instruments and surfaces, ensuring the highest hygiene standards in the salon.",
+    "image": "assets/logos/logo-occ-switzerland.jpg",
+    "productCount": 3
+  },
+  {
+    "id": "premium",
+    "name": "PREMIUM",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Salon Consumables",
+    "description": "PREMIUM supplies professional salon consumables — highlighting foils, disposables and body-wrap accessories — for everyday salon and spa use.",
+    "image": "assets/logos/logo-premium.webp",
+    "productCount": 20
+  },
+  {
+    "id": "quickepil",
+    "name": "Quickepil",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Depilatory Waxing",
+    "description": "Quickepil is a professional Spanish waxing brand offering a full depilatory range — film and warm waxes, roll-on refills, and pre and after-wax care — designed for fast, comfortable and effective hair removal.",
+    "image": "assets/logos/logo-quickepil.jpg",
+    "productCount": 49
+  },
+  {
+    "id": "refectocil",
+    "name": "RefectoCil",
+    "isOfficialDistributor": false,
+    "tagline": "The World Leader in Lash & Brow Tinting",
+    "description": "RefectoCil is the world's leading professional eyelash and eyebrow tinting brand, made in Austria and trusted in over 70 countries. Its salon-proven tints, developers, primers and accessories deliver rich, long-lasting colour for precise, beautiful lash and brow results.",
+    "image": "assets/logos/logo-refectocil.png",
+    "productCount": 27
+  },
+  {
+    "id": "roial",
+    "name": "Roial",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Waxing & Salon Supplies",
+    "description": "Roial is a professional waxing and salon-supply brand offering depilatory waxes, roll-on cartridges, disposables, foils and pre and after-wax care for reliable, comfortable hair-removal services.",
+    "image": "assets/logos/logo-roial.webp",
+    "productCount": 108
+  },
+  {
+    "id": "roial-unica-folosinta",
+    "name": "Roial Disposables",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Single-Use Salon Supplies",
+    "description": "Roial Disposables offers professional single-use salon consumables — caps, briefs, sheets, towels and gloves — for hygiene and comfort during treatments.",
+    "image": "assets/logos/logo-roial-unica-folosinta.webp",
+    "productCount": 48
+  },
+  {
+    "id": "roial-iwax",
+    "name": "Roial iWAX",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Roll-On Waxing",
+    "description": "Roial iWAX is a professional roll-on waxing line offering cartridge waxes and applicators for fast, hygienic and precise hair removal.",
+    "image": "assets/logos/logo-roial-iwax.png",
+    "productCount": 6
+  },
+  {
+    "id": "salonpro",
+    "name": "SalonPRO",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Salon Accessories",
+    "description": "SalonPRO offers professional salon accessories and consumables for daily barbershop and salon operations.",
+    "image": "assets/logos/logo-salonpro.webp",
+    "productCount": 1
+  },
+  {
+    "id": "seyfnstein",
+    "name": "Seyfnstein",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Colour Care",
+    "description": "Seyfnstein provides professional colour-cleaning solutions that remove tint and dye residue for a clean, professional finish.",
+    "image": "assets/logos/logo-seyfnstein.webp",
+    "productCount": 1
+  },
+  {
+    "id": "siem",
+    "name": "SIEM",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Shower Gels",
+    "description": "SIEM offers refreshing professional shower gels in vibrant fragrances that cleanse and revitalise the skin.",
+    "image": "assets/logos/logo-siem.jpg",
+    "productCount": 3
+  },
+  {
+    "id": "silvermax",
+    "name": "Silvermax",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Razor Blades & Shaving Tools",
+    "description": "Silvermax is a specialist manufacturer of professional razor blades and shaving tools trusted by barbers across Europe. Offering single-edge and double-edge blade formats in Platinum and Super Platinum coatings, Silvermax delivers consistent sharpness, precision, and reliability — essential for professional wet shaving services in any barbershop.",
+    "image": "assets/logos/logo-silvermax.webp",
+    "productCount": 5
+  },
+  {
+    "id": "soft",
+    "name": "SOFT",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Salon Disposables",
+    "description": "SOFT supplies professional single-use salon consumables — caps, slippers and shoe covers — for hygiene and comfort during treatments.",
+    "image": "assets/logos/logo-soft.png",
+    "productCount": 6
+  },
+  {
+    "id": "spumadisciampagna",
+    "name": "Spuma di Sciampagna",
+    "isOfficialDistributor": false,
+    "tagline": "Classic Italian Talc",
+    "description": "Spuma di Sciampagna is a classic Italian brand whose scented talc powder leaves the skin soft, dry and delicately fragranced.",
+    "image": "assets/logos/logo-spumadisciampagna.jpg",
+    "productCount": 1
+  },
+  {
+    "id": "starpil",
+    "name": "Starpil",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Wax Systems from Spain",
+    "description": "Starpil is a renowned Spanish professional waxing brand offering film waxes, warm waxes, roll-on cartridges and complete pre and after-wax care, trusted by estheticians worldwide for reliable, comfortable hair removal.",
+    "image": "assets/logos/logo-starpil.png",
+    "productCount": 59
+  },
+  {
+    "id": "xanitalia",
+    "name": "Xanitalia",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Depilatory Specialists",
+    "description": "Xanitalia is an Italian leader in professional depilatory waxes, backed by continuous investment in research and manufacturing. Trusted by beauty professionals across Europe, the brand offers a comprehensive range of hot waxes, film granules, sugar pastes, and pre/post-epilation care products — all engineered for precise, comfortable, and long-lasting hair removal results.",
+    "image": "assets/logos/logo-xanitalia.png",
+    "productCount": 33
+  },
+  {
+    "id": "xanitaliapro",
+    "name": "XanitaliaPro",
+    "isOfficialDistributor": false,
+    "tagline": "Professional Beauty Equipment",
+    "description": "XanitaliaPro is the professional equipment and accessories division of the Xanitalia Group. Specialising in professional-grade tools for hair salons, barbershops, and beauty studios — including precision clippers, trimmers, shavers, hair dusters, cutting capes, and salon accessories — all rigorously quality tested before release.",
+    "image": "assets/logos/logo-xanitaliapro.png",
+    "productCount": 93
+  }
+]

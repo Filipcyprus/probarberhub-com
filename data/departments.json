@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Tools",
+    "count": 39,
+    "image": "assets/categories/tools.jpg"
+  },
+  {
+    "name": "Styling Products",
+    "count": 172,
+    "image": "assets/categories/styling-products.webp"
+  },
+  {
+    "name": "Aftershave & Cologne",
+    "count": 93,
+    "image": "assets/categories/aftershave-cologne.webp"
+  },
+  {
+    "name": "Blades & Shaving",
+    "count": 36,
+    "image": "assets/categories/blades-shaving.jpg"
+  },
+  {
+    "name": "Tools & Accessories",
+    "count": 285,
+    "image": "assets/categories/tools-accessories.jpg"
+  },
+  {
+    "name": "Consumables & Hygiene",
+    "count": 136,
+    "image": "assets/categories/consumables-hygiene.webp"
+  },
+  {
+    "name": "Hair & Skin Care",
+    "count": 84,
+    "image": "assets/categories/hair-skin-care.webp"
+  },
+  {
+    "name": "Beard Care",
+    "count": 12,
+    "image": "assets/categories/beard-care.webp"
+  },
+  {
+    "name": "Dryers & Stylers",
+    "count": 10,
+    "image": "assets/categories/dryers-stylers.jpg"
+  },
+  {
+    "name": "Waxing & Salon",
+    "count": 424,
+    "image": "assets/categories/waxing-salon.webp"
+  }
+]

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Request a Product Test Visit — ProBarberHub Wholesale</title>
+<meta name="description" content="Have ProBarberHub pass by your barbershop or salon in Cyprus to test Rovra, Barbertime and other professional products in person before you order." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23131417%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Arial%22 font-weight=%22900%22 fill=%22%23E32227%22 text-anchor=%22middle%22>P</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=38">
+</head>
+<body data-page="test-visit">
+
+<div id="site-announce"></div>
+<div id="site-topbar"></div>
+<div id="sidebar-backdrop"></div>
+<div class="shell">
+  <aside id="site-sidebar"></aside>
+  <div class="main-col">
+
+<div class="page-header">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Test Products In-Shop</div>
+    <h1 style="margin-bottom:6px;">Request a Product Test Visit</h1>
+    <p class="lede mb-0">Not ready to order sight-unseen? We'll pass by your barbershop or salon in Cyprus so your team can try Rovra, Barbertime and our other lines in person — no obligation.</p>
+  </div>
+</div>
+
+<main class="container contact-layout">
+  <div>
+    <div class="info-card" style="text-align:center; background:var(--brand-light); border:none;">
+      <h3 style="margin-bottom:10px; font-size:1.1rem;">Need it sooner?</h3>
+      <p style="font-size:.9rem; margin-bottom:16px;">Call us directly — our team can arrange a visit this week.</p>
+      <a href="tel:+35795742890" class="btn btn-red btn-block">Call +357 95 742 890</a>
+    </div>
+  </div>
+
+  <div class="form-card">
+    <h2 style="margin-bottom:6px;">Request a Visit</h2>
+    <p style="font-size:.85rem; color:var(--muted);">Fill your details below and we'll contact you within 24 hours to arrange a time that works for your shop.</p>
+    <form id="visit-form">
+      <div class="form-row"><label for="fld-name">Your name *</label><input type="text" id="fld-name" required></div>
+      <div class="form-row"><label for="fld-business">Shop name *</label><input type="text" id="fld-business" required></div>
+      <div class="form-row"><label for="fld-phone">Phone / WhatsApp *</label><input type="tel" id="fld-phone" required></div>
+      <div class="form-row"><label for="fld-city">City *</label><input type="text" id="fld-city" placeholder="e.g. Nicosia, Limassol" required></div>
+      <div class="form-row"><label for="fld-products">What would you like to test?</label><textarea id="fld-products" placeholder="e.g. Rovra clippers, waxes, styling products…" style="min-height:80px;"></textarea></div>
+      <button type="submit" class="btn btn-red btn-block">Request a Visit</button>
+      <p class="form-note">Sending opens WhatsApp with your details pre-filled to +357 95 742 890. Prefer email? <a href="mailto:contact@rovra.cy" style="font-weight:700;">contact@rovra.cy</a></p>
+      <div class="form-success" id="form-success">Thanks! We'll be in touch shortly to arrange your visit.</div>
+    </form>
+  </div>
+</main>
+
+  </div>
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/app.js?v=38"></script>
+<script src="js/cards.js?v=38"></script>
+<script src="js/chrome.js?v=38"></script>
+<script>
+  document.getElementById('visit-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    const v = id => (document.getElementById(id).value || '').trim();
+    const lines = [
+      `Product test visit request from ${v('fld-name')}`,
+      `Business: ${v('fld-business')}`,
+      `Phone: ${v('fld-phone')}`,
+      `City: ${v('fld-city')}`,
+      v('fld-products') ? `Products to test: ${v('fld-products')}` : null,
+    ].filter(Boolean);
+    window.open(whatsappLink(lines.join('\n')), '_blank', 'noopener');
+    document.getElementById('form-success').classList.add('show');
+  });
+</script>
+</body>
+</html>

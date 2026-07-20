@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Clearance Deals — ProBarberHub Wholesale</title>
+<meta name="description" content="End-of-line and open-box barber &amp; salon stock at our best wholesale prices. Limited quantities — add to your quote and we'll confirm the clearance price." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23131417%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Arial%22 font-weight=%22900%22 fill=%22%23E32227%22 text-anchor=%22middle%22>P</text></svg>" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=38">
+</head>
+<body data-page="clearance">
+
+<div id="site-announce"></div>
+<div id="site-topbar"></div>
+<div id="sidebar-backdrop"></div>
+<div class="shell">
+  <aside id="site-sidebar"></aside>
+  <div class="main-col">
+
+<div class="page-header" style="background:var(--brand-light);">
+  <div class="container">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Clearance</div>
+    <span class="clearance-tag">Clearance Deals</span>
+    <h1 style="margin:14px 0 6px;">End-of-line &amp; open-box stock</h1>
+    <p class="lede mb-0" id="page-sub">Limited-quantity trade stock at our best wholesale pricing.</p>
+    <p class="lede mb-0" style="margin-top:10px;font-size:14px;opacity:.85;">Clearing current stock doesn't mean we're dropping these lines — we'll keep supplying them as usual once this batch sells through.</p>
+  </div>
+</div>
+
+<main class="container" style="padding:30px 0 70px;">
+  <div class="results-bar">
+    <div class="results-count" id="results-count">Loading clearance stock…</div>
+    <a href="catalog.html" class="link-red">Browse full catalog →</a>
+  </div>
+  <div id="grid-wrap">
+    <div class="skeleton-grid">
+      <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+    </div>
+  </div>
+</main>
+
+  </div>
+</div>
+
+<footer class="site-footer" id="site-footer"></footer>
+
+<script src="js/app.js?v=38"></script>
+<script src="js/cards.js?v=38"></script>
+<script src="js/chrome.js?v=38"></script>
+<script>
+  fetch('data/products.json?v=38').then(r => r.json()).then(products => {
+    PBH.registerProducts(products);
+    const items = products.filter(p => p.clearance);
+    document.getElementById('results-count').textContent = `${items.length} clearance deal${items.length === 1 ? '' : 's'} — while stock lasts`;
+    document.getElementById('page-sub').textContent = `${items.length} limited-quantity items at our best wholesale pricing. Add to your quote and we'll confirm the clearance price.`;
+    document.getElementById('grid-wrap').innerHTML = `<div class="product-grid">${items.map(PBH.productCardHtml).join('')}</div>`;
+  }).catch(err => {
+    console.error('Failed to load clearance', err);
+    document.getElementById('grid-wrap').innerHTML = '<div class="empty-state"><h3>Could not load clearance stock</h3><p>Please refresh and try again.</p></div>';
+  });
+</script>
+</body>
+</html>
