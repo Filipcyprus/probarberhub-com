@@ -63,7 +63,7 @@
       if (!val) { status.textContent = ''; return; }
       const match = findReferral(val);
       if (match) { status.textContent = `✓ Referred by ${match.ambassador}`; status.style.color = 'var(--brand, #E32227)'; }
-      else { status.textContent = 'Code not recognized — check for typos'; status.style.color = 'var(--muted)'; }
+      else { status.textContent = '✗ Referral code doesn\'t exist'; status.style.color = '#c0392b'; }
     });
 
     root.querySelectorAll('[data-inc]').forEach(b => b.addEventListener('click', () => { const id = b.getAttribute('data-inc'); const it = getQuote().find(i => i.id === id); setQty(id, (it.qty || 1) + 1); }));
