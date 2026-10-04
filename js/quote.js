@@ -3,7 +3,7 @@
 (function () {
   const root = document.getElementById('quote-root');
   let referralCodes = [];
-  fetch('data/referral-codes.json?v=47').then(r => r.json()).then(list => { referralCodes = list; }).catch(() => {});
+  fetch('data/referral-codes.json?v=48').then(r => r.json()).then(list => { referralCodes = list; }).catch(() => {});
 
   function findReferral(code) {
     const c = (code || '').trim().toUpperCase();

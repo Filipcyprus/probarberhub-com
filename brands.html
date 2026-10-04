@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#0B0B0D" />
 <title>Brands We Supply — ProBarberHub Wholesale</title>
 <meta name="description" content="35+ professional barber and salon brands available at wholesale — Rovra, Barbertime, Immortal NYC, L3VEL3, Xanitalia and more. Official distributor lines." />
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2218%22 fill=%22%23131417%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-family=%22Arial%22 font-weight=%22900%22 fill=%22%23E32227%22 text-anchor=%22middle%22>P</text></svg>" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=47">
+<link rel="stylesheet" href="css/style.css?v=48">
 </head>
 <body data-page="brands">
 
@@ -39,11 +40,11 @@
 
 <footer class="site-footer" id="site-footer"></footer>
 
-<script src="js/app.js?v=47"></script>
-<script src="js/cards.js?v=47"></script>
-<script src="js/chrome.js?v=47"></script>
+<script src="js/app.js?v=48"></script>
+<script src="js/cards.js?v=48"></script>
+<script src="js/chrome.js?v=48"></script>
 <script>
-  fetch('data/brands.json?v=47').then(r => r.json()).then(brands => {
+  fetch('data/brands.json?v=48').then(r => r.json()).then(brands => {
     document.getElementById('page-sub').textContent = `${brands.length} professional brands · ${brands.reduce((s,b)=>s+b.productCount,0).toLocaleString()} products at trade prices.`;
     // fixed order: Rovra (house line) first, then alphabetical — never random
     const ordered = brands.slice().sort((a, b) =>

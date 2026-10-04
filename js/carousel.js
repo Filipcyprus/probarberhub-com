@@ -39,6 +39,17 @@
   root.addEventListener('focusin', stop);
   root.addEventListener('focusout', start);
 
+  // swipe left/right on touch screens
+  let touchX = null;
+  root.addEventListener('touchstart', (e) => { touchX = e.touches[0].clientX; stop(); }, { passive: true });
+  root.addEventListener('touchend', (e) => {
+    if (touchX === null) return;
+    const dx = e.changedTouches[0].clientX - touchX;
+    touchX = null;
+    if (Math.abs(dx) > 40) (dx < 0 ? next : prev)();
+    start();
+  }, { passive: true });
+
   start();
 })();
 
