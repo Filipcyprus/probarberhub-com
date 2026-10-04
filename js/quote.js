@@ -3,7 +3,7 @@
 (function () {
   const root = document.getElementById('quote-root');
   let referralCodes = [];
-  fetch('data/referral-codes.json?v=48').then(r => r.json()).then(list => { referralCodes = list; }).catch(() => {});
+  fetch('data/referral-codes.json?v=49').then(r => r.json()).then(list => { referralCodes = list; }).catch(() => {});
 
   function findReferral(code) {
     const c = (code || '').trim().toUpperCase();
@@ -28,7 +28,7 @@
 
     const totalUnits = items.reduce((s, i) => s + (i.qty || 1), 0);
     root.innerHTML = `
-      <div style="display:grid;grid-template-columns:1fr 320px;gap:30px;align-items:flex-start;" class="quote-grid">
+      <div class="quote-grid">
         <div>
           <div class="quote-list">
             ${items.map(itemRow).join('')}
@@ -36,11 +36,11 @@
           <button class="btn btn-outline btn-sm" id="clear-quote">Clear list</button>
         </div>
         <aside class="quote-summary">
-          <h3 style="margin-bottom:14px;">Quote summary</h3>
-          <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:8px;"><span>Product lines</span><strong>${items.length}</strong></div>
-          <div style="display:flex;justify-content:space-between;font-size:.9rem;margin-bottom:16px;"><span>Total units</span><strong>${totalUnits}</strong></div>
-          <p style="font-size:.82rem;">Send your list and we'll reply with wholesale pricing and current stock, usually within a few hours.</p>
-          <form id="quote-form" style="margin-top:14px;">
+          <h3>Quote summary</h3>
+          <div class="quote-summary-row"><span>Product lines</span><strong>${items.length}</strong></div>
+          <div class="quote-summary-row"><span>Total units</span><strong>${totalUnits}</strong></div>
+          <p class="quote-summary-note">Send your list and we'll reply with wholesale pricing and current stock, usually within a few hours.</p>
+          <form id="quote-form" style="margin-top:18px;">
             <div class="form-row"><label for="q-name">Your name *</label><input id="q-name" required></div>
             <div class="form-row"><label for="q-business">Barbershop / business *</label><input id="q-business" required></div>
             <div class="form-row"><label for="q-phone">Phone / WhatsApp *</label><input id="q-phone" type="tel" required></div>

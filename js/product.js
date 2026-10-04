@@ -6,8 +6,8 @@
   if (!id) { root.innerHTML = notFound(); return; }
 
   Promise.all([
-    fetch('data/products.json?v=48').then(r => r.json()),
-    fetch('data/brands.json?v=48').then(r => r.json()),
+    fetch('data/products.json?v=49').then(r => r.json()),
+    fetch('data/brands.json?v=49').then(r => r.json()),
   ]).then(([products, brands]) => {
     PBH.registerProducts(products);
     const p = products.find(x => x.id === id);

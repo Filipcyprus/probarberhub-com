@@ -58,7 +58,6 @@ window.PBH = (function () {
           </div>
           <div class="product-actions">
             <button class="btn-quote" data-quote-id="${escapeHtml(p.id)}">+ Add to Quote</button>
-            <a class="btn-view" href="product.html?id=${encodeURIComponent(p.id)}">View</a>
           </div>
         </div>
       </div>

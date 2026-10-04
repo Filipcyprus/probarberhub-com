@@ -188,11 +188,18 @@
   els.clear.addEventListener('click', clearAll);
   els.loadMore.addEventListener('click', () => render(false));
 
+  // phones: filter fields stay folded away until asked for
+  const filtersBox = document.querySelector('.filters');
+  const filtersToggle = document.getElementById('f-toggle');
+  filtersToggle.addEventListener('click', () => {
+    filtersToggle.setAttribute('aria-expanded', String(filtersBox.classList.toggle('open')));
+  });
+
   Promise.all([
-    fetch('data/products.json?v=48').then(r => r.json()),
-    fetch('data/brands.json?v=48').then(r => r.json()),
-    fetch('data/types.json?v=48').then(r => r.json()),
-    fetch('data/departments.json?v=48').then(r => r.json()),
+    fetch('data/products.json?v=49').then(r => r.json()),
+    fetch('data/brands.json?v=49').then(r => r.json()),
+    fetch('data/types.json?v=49').then(r => r.json()),
+    fetch('data/departments.json?v=49').then(r => r.json()),
   ]).then(([p, b, t, d]) => {
     allProducts = p; brands = b; types = t; departments = d;
     PBH.registerProducts(p);
