@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=49">
+<link rel="stylesheet" href="css/style.css?v=50">
 </head>
 <body data-page="brands">
 
@@ -40,11 +40,11 @@
 
 <footer class="site-footer" id="site-footer"></footer>
 
-<script src="js/app.js?v=49"></script>
-<script src="js/cards.js?v=49"></script>
-<script src="js/chrome.js?v=49"></script>
+<script src="js/app.js?v=50"></script>
+<script src="js/cards.js?v=50"></script>
+<script src="js/chrome.js?v=50"></script>
 <script>
-  fetch('data/brands.json?v=49').then(r => r.json()).then(brands => {
+  fetch('data/brands.json?v=50').then(r => r.json()).then(brands => {
     document.getElementById('page-sub').textContent = `${brands.length} professional brands · ${brands.reduce((s,b)=>s+b.productCount,0).toLocaleString()} products at trade prices.`;
     // fixed order: Rovra (house line) first, then alphabetical — never random
     const ordered = brands.slice().sort((a, b) =>

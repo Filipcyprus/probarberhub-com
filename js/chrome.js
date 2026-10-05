@@ -110,7 +110,7 @@
             <li><a href="tel:+35795742890">+357 95 742 890</a></li>
             <li><a href="mailto:contact@rovra.cy">contact@rovra.cy</a></li>
             <li>Nicosia, Cyprus — island-wide delivery</li>
-            <li><a href="https://instagram.com/rovra.cy" target="_blank" rel="noopener">@rovra.cy</a> · <a href="https://instagram.com/barbertimecyprus" target="_blank" rel="noopener">@barbertimecyprus</a></li>
+            <li><a href="https://instagram.com/rovracy" target="_blank" rel="noopener">@rovracy</a></li>
           </ul>
         </div>
       </div>

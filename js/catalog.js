@@ -196,10 +196,10 @@
   });
 
   Promise.all([
-    fetch('data/products.json?v=49').then(r => r.json()),
-    fetch('data/brands.json?v=49').then(r => r.json()),
-    fetch('data/types.json?v=49').then(r => r.json()),
-    fetch('data/departments.json?v=49').then(r => r.json()),
+    fetch('data/products.json?v=50').then(r => r.json()),
+    fetch('data/brands.json?v=50').then(r => r.json()),
+    fetch('data/types.json?v=50').then(r => r.json()),
+    fetch('data/departments.json?v=50').then(r => r.json()),
   ]).then(([p, b, t, d]) => {
     allProducts = p; brands = b; types = t; departments = d;
     PBH.registerProducts(p);
